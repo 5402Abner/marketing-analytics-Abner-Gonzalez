@@ -28,7 +28,7 @@ _trapz = getattr(np, "trapezoid", None) or np.trapz
 @st.cache_data
 def load_data():
     # Ruta relativa al archivo, para que funcione igual local y en Streamlit Cloud
-    return pd.read_csv(Path(__file__).parent / "data" / "uplift_campaign.csv")
+    return pd.read_csv(Path(__file__).parent / "uplift_campaign.csv")
 
 
 @st.cache_data
